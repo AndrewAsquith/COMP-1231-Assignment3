@@ -60,6 +60,7 @@ public class IntegerAveragerDriver {
 			// need to collect NUMBER_REQUIRED integers, loop until we have them
 		} while (averager.getNumberOfSubmissions() < NUMBER_REQUIRED);
 		
+		inputScanner.close();
 		
 		//number formatter for 1 decimal place in case we don't stick with 10 numbers
 		DecimalFormat formatter = new DecimalFormat("#0.0");
